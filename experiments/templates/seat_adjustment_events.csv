@@ -1,0 +1,3 @@
+date,seat_setup_id,adjustment_type,adjustment_value,previous_setup_id,hypothesis,expected_improvement,watch_risk,keep_condition,rollback_condition,notes
+2026-06-30,A,height,+1cm,Baseline,提高髋部位置并减轻坐骨两侧软组织挤压,side_soft_tissue_squeeze下降,numbness_or_tingling上升,两侧挤压下降且无麻刺,出现麻刺或刹车安全下降,
+2026-07-03,B,fore_aft,-1cm backward,A,打开髋膝角并减轻大腿根压力,thigh_root_pressure下降,right_leg_pedal_fatigue上升,大腿根压力下降且刹车安全,脚尖够踏板或身体前探,
