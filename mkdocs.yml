@@ -1,0 +1,37 @@
+site_name: Tesla Model 3 驾驶人体工程学与受力分析指南
+site_description: 用人体工程学、生物力学和工程验证解释 Tesla Model 3 驾驶舒适性
+site_author: Jianmin Bai
+repo_name: bai8962/Tesla-Model3-Ergonomics
+repo_url: https://github.com/bai8962/Tesla-Model3-Ergonomics
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+
+docs_dir: .
+
+nav:
+  - 首页: README.md
+  - 快速开始: QUICKSTART.md
+  - 路线图: ROADMAP.md
+  - 正文:
+      - 前言: book/00-前言.md
+      - 第一章 驾驶为什么会让人疼: book/01-驾驶为什么会让人疼.md
+      - 第二章 骨盆决定受力: book/02-骨盆决定受力.md
+      - 第三章 坐骨与软组织受力: book/03-坐骨与软组织受力.md
+      - 第四章 Model 3 座椅结构分析: book/04-Tesla_Model3座椅结构分析.md
+      - 第五章 座椅调节流程: book/05-座椅调节流程.md
+  - 实验:
+      - 驾驶记录模板: experiments/driver_log_template.md
+      - Case001 当前设置: experiments/case_001_current_setup.md
+  - 贡献指南: CONTRIBUTING.md
+
+exclude_docs: |
+  .github/
+  assets/
