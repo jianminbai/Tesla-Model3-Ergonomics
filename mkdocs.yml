@@ -1,8 +1,9 @@
 site_name: Tesla Model 3 驾驶人体工程学与受力分析指南
-site_description: 用人体工程学、生物力学和工程验证解释 Tesla Model 3 驾驶舒适性
+site_description: 用人体工程学、生物力学、受力图和工程实验解释 Tesla Model 3 驾驶舒适性
 site_author: Jianmin Bai
-repo_name: bai8962/Tesla-Model3-Ergonomics
-repo_url: https://github.com/bai8962/Tesla-Model3-Ergonomics
+repo_name: jianminbai/Tesla-Model3-Ergonomics
+repo_url: https://github.com/jianminbai/Tesla-Model3-Ergonomics
+edit_uri: edit/main/
 
 theme:
   name: material
@@ -11,27 +12,80 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.indexes
     - search.highlight
+    - search.share
     - content.code.copy
+    - content.action.edit
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - scheme: slate
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
 
 docs_dir: .
 
 nav:
   - 首页: README.md
-  - 快速开始: QUICKSTART.md
-  - 路线图: ROADMAP.md
+  - 快速开始:
+      - 快速开始: QUICKSTART.md
+      - 导航地图: docs/navigation_map.md
+      - 路线图: ROADMAP.md
   - 正文:
       - 前言: book/00-前言.md
       - 第一章 驾驶为什么会让人疼: book/01-驾驶为什么会让人疼.md
       - 第二章 骨盆决定受力: book/02-骨盆决定受力.md
       - 第三章 坐骨与软组织受力: book/03-坐骨与软组织受力.md
-      - 第四章 Model 3 座椅结构分析: book/04-Tesla_Model3座椅结构分析.md
+      - 第四章 Tesla Model 3 座椅结构分析: book/04-Tesla_Model3座椅结构分析.md
       - 第五章 座椅调节流程: book/05-座椅调节流程.md
-  - 实验:
+      - 第六章 踏板几何与右腿疲劳: book/06-踏板几何与右腿疲劳.md
+      - 第七章 症状决策树: book/07-症状决策树.md
+      - 第八章 康复与办公椅联动: book/08-康复与办公椅联动.md
+      - 第九章 实验系统与量化记录: book/09-实验系统与量化记录.md
+      - 第十章 可视化插图与图表体系: book/10-可视化插图与图表体系.md
+      - 第十一章 GitHub Pages 发布与项目运营: book/11-GitHub_Pages发布与项目运营.md
+  - 快速排查:
+      - 症状快速排查表: docs/quick_diagnosis_table.md
+      - 办公椅检查清单: docs/office_chair_checklist.md
+  - 实验系统:
+      - 实验系统说明: docs/experiment_system.md
       - 驾驶记录模板: experiments/driver_log_template.md
+      - 症状决策记录模板: experiments/symptom_decision_log_template.md
+      - 康复办公记录模板: experiments/rehab_office_log_template.md
       - Case001 当前设置: experiments/case_001_current_setup.md
-  - 贡献指南: CONTRIBUTING.md
+  - 图表:
+      - 插图索引: docs/diagram_index.md
+      - 视觉风格指南: docs/visual_style_guide.md
+  - 项目维护:
+      - 发布指南: docs/github_pages_publish_guide.md
+      - 贡献指南: CONTRIBUTING.md
 
 exclude_docs: |
   .github/
-  assets/
+  site/
+  experiments/data/
+  experiments/output/
+  *.zip
