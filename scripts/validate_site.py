@@ -43,6 +43,13 @@ REQUIRED_FILES = [
 ]
 
 
+import io
+import sys
+
+# Ensure UTF-8 output for Chinese filenames
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
+
+
 def main() -> int:
     print("# Site Validation")
     print("")

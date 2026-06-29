@@ -71,7 +71,7 @@ https://jianminbai.github.io/Tesla-Model3-Ergonomics/
 ## 当前内容结构
 
 ```text
-book/
+book/                                # 正文 12 章
 ├── 00-前言.md
 ├── 01-驾驶为什么会让人疼.md
 ├── 02-骨盆决定受力.md
@@ -84,6 +84,36 @@ book/
 ├── 09-实验系统与量化记录.md
 ├── 10-可视化插图与图表体系.md
 └── 11-GitHub_Pages发布与项目运营.md
+
+docs/                                # 辅助文档
+├── quick_diagnosis_table.md         #   症状快速排查表
+├── office_chair_checklist.md        #   办公椅检查清单
+├── experiment_system.md             #   实验系统说明
+├── diagram_index.md                 #   插图索引
+├── visual_style_guide.md            #   视觉风格指南
+├── navigation_map.md                #   导航地图
+└── github_pages_publish_guide.md    #   发布指南
+
+assets/diagrams/svg/                 # 8 张原创 SVG 插图
+├── 01_pressure_distribution.svg
+├── 02_pelvis_postures.svg
+├── 03_model3_seat_top_view.svg
+├── 04_seat_height_force_change.svg
+├── 05_pedal_dynamic_load_chain.svg
+├── 06_symptom_decision_overview.svg
+├── 07_experiment_system_flow.svg
+└── 08_rehab_office_triangle.svg
+
+experiments/                         # 实验系统
+├── templates/                       #   CSV 记录模板
+├── data/                            #   实际记录数据
+├── output/                          #   分析脚本输出
+└── case_001_current_setup.md        #   当前案例
+
+scripts/                             # 工具脚本
+├── validate_site.py
+├── check_diagrams.py
+└── analyze_experiments.py
 ```
 
 ---
@@ -217,9 +247,5 @@ experiments/output/summary.md
 
 ## License
 
-建议：
-
 - 文档内容：CC BY-NC 4.0
-- 脚本代码：MIT License
-
-如需正式开源，可补充对应 LICENSE 文件。
+- 脚本代码：MIT License (see [LICENSE](LICENSE))

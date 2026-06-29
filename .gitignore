@@ -3,3 +3,16 @@ __pycache__/
 *.pyc
 .venv/
 site/
+
+# Build / generated output
+experiments/data/
+experiments/output/
+
+# Archives (update packages)
+*.zip
+
+# IDE
+.vscode/
+
+# Legacy consolidated manuscript (replaced by book/ chapters)
+manuscript_v0.1.md

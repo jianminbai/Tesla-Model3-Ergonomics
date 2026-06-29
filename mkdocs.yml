@@ -85,7 +85,10 @@ nav:
 
 exclude_docs: |
   .github/
+  .claude/
   site/
   experiments/data/
   experiments/output/
+  CLAUDE.md
+  UPDATE_NOTES_*.md
   *.zip
