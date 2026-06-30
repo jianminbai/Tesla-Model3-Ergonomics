@@ -65,6 +65,13 @@ git push -u origin main
 experiments/driver_log_template.md
 ```
 
+本地预览网站：
+
+```bash
+pip install -r requirements.txt
+mkdocs serve
+```
+
 ## 3. 第一周目标
 
 第一周只做四件事：

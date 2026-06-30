@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 .venv/
 site/
+site_docs/
 
 # Build / generated output
 experiments/data/

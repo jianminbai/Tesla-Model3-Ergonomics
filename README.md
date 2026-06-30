@@ -34,6 +34,9 @@ https://jianminbai.github.io/Tesla-Model3-Ergonomics/
 | [办公椅检查清单](docs/office_chair_checklist.md) | 办公久坐也不舒服的人 |
 | [实验系统说明](docs/experiment_system.md) | 想量化记录座椅调整的人 |
 | [插图索引](docs/diagram_index.md) | 想看受力图和流程图的人 |
+| [案例库](docs/case_library.md) | 想参考结构化案例的人 |
+| [Model Y 与其他车型对比](docs/model_y_and_other_cars.md) | 想迁移到其他车型的人 |
+| [English Summary](docs/english_summary.md) | English readers and project overview |
 | [路线图](ROADMAP.md) | 想了解项目计划的人 |
 
 ---
@@ -66,6 +69,12 @@ https://jianminbai.github.io/Tesla-Model3-Ergonomics/
 3. `experiments/templates/driver_daily_log.csv`
 4. `scripts/analyze_experiments.py`
 
+### 路线 E：我想看案例或对比其他车型
+
+1. [案例库](docs/case_library.md)
+2. [Case001 当前设置](experiments/case_001_current_setup.md)
+3. [Model Y 与其他车型对比](docs/model_y_and_other_cars.md)
+
 ---
 
 ## 当前内容结构
@@ -89,6 +98,9 @@ docs/                                # 辅助文档
 ├── quick_diagnosis_table.md         #   症状快速排查表
 ├── office_chair_checklist.md        #   办公椅检查清单
 ├── experiment_system.md             #   实验系统说明
+├── case_library.md                  #   案例库
+├── model_y_and_other_cars.md        #   Model Y 与其他车型对比
+├── english_summary.md               #   英文摘要
 ├── diagram_index.md                 #   插图索引
 ├── visual_style_guide.md            #   视觉风格指南
 ├── navigation_map.md                #   导航地图
@@ -181,7 +193,7 @@ scripts/                             # 工具脚本
 安装依赖：
 
 ```bash
-pip install mkdocs mkdocs-material
+pip install -r requirements.txt
 ```
 
 本地启动：
@@ -193,6 +205,7 @@ mkdocs serve
 构建检查：
 
 ```bash
+python scripts/sync_site_docs.py
 mkdocs build --strict
 ```
 
@@ -212,7 +225,7 @@ copy experiments\templates\office_rehab_daily_log.csv experiments\data\office_re
 安装依赖：
 
 ```powershell
-pip install pandas matplotlib
+pip install -r requirements.txt
 ```
 
 生成趋势图：
@@ -248,4 +261,4 @@ experiments/output/summary.md
 ## License
 
 - 文档内容：CC BY-NC 4.0
-- 脚本代码：MIT License (see [LICENSE](LICENSE))
+- 脚本代码：MIT License (see [LICENSE](https://github.com/jianminbai/Tesla-Model3-Ergonomics/blob/main/LICENSE))

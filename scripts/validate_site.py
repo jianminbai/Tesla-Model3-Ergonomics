@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import io
 from pathlib import Path
 import sys
 
@@ -11,6 +12,7 @@ REQUIRED_FILES = [
     "QUICKSTART.md",
     "ROADMAP.md",
     "CONTRIBUTING.md",
+    "requirements.txt",
     "mkdocs.yml",
     "book/00-前言.md",
     "book/01-驾驶为什么会让人疼.md",
@@ -27,6 +29,9 @@ REQUIRED_FILES = [
     "docs/quick_diagnosis_table.md",
     "docs/office_chair_checklist.md",
     "docs/experiment_system.md",
+    "docs/case_library.md",
+    "docs/model_y_and_other_cars.md",
+    "docs/english_summary.md",
     "docs/diagram_index.md",
     "docs/visual_style_guide.md",
     "docs/github_pages_publish_guide.md",
@@ -40,11 +45,9 @@ REQUIRED_FILES = [
     "assets/diagrams/svg/07_experiment_system_flow.svg",
     "assets/diagrams/svg/08_rehab_office_triangle.svg",
     ".github/workflows/docs.yml",
+    "scripts/sync_site_docs.py",
 ]
 
-
-import io
-import sys
 
 # Ensure UTF-8 output for Chinese filenames
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")

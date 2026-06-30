@@ -85,6 +85,38 @@
 
 ---
 
+## 我想看真实案例
+
+优先看：
+
+1. [案例库](case_library.md)
+2. [Case001 当前设置](../experiments/case_001_current_setup.md)
+3. [实验系统说明](experiment_system.md)
+
+目标：
+
+```text
+把个人体感拆成可记录、可比较、可回退的座椅实验。
+```
+
+---
+
+## 我想比较 Model Y 或其他车型
+
+优先看：
+
+1. [Model Y 与其他车型对比](model_y_and_other_cars.md)
+2. [第四章 Tesla Model 3 座椅结构分析](../book/04-Tesla_Model3座椅结构分析.md)
+3. [第六章 踏板几何与右腿疲劳](../book/06-踏板几何与右腿疲劳.md)
+
+目标：
+
+```text
+区分哪些结论来自人体力学，哪些结论来自 Model 3 特定几何。
+```
+
+---
+
 ## 我想看图理解
 
 优先看：

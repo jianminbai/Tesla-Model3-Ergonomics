@@ -46,7 +46,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
 
-docs_dir: .
+docs_dir: site_docs
 
 nav:
   - 首页: README.md
@@ -70,6 +70,8 @@ nav:
   - 快速排查:
       - 症状快速排查表: docs/quick_diagnosis_table.md
       - 办公椅检查清单: docs/office_chair_checklist.md
+      - 案例库: docs/case_library.md
+      - Model Y 与其他车型对比: docs/model_y_and_other_cars.md
   - 实验系统:
       - 实验系统说明: docs/experiment_system.md
       - 驾驶记录模板: experiments/driver_log_template.md
@@ -80,6 +82,7 @@ nav:
       - 插图索引: docs/diagram_index.md
       - 视觉风格指南: docs/visual_style_guide.md
   - 项目维护:
+      - English Summary: docs/english_summary.md
       - 发布指南: docs/github_pages_publish_guide.md
       - 贡献指南: CONTRIBUTING.md
 
