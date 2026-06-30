@@ -198,3 +198,82 @@ assets/diagrams/svg/08_rehab_office_triangle.svg
 ```markdown
 ![车座、办公椅、身体组织状态三角模型](../assets/diagrams/svg/08_rehab_office_triangle.svg)
 ```
+
+---
+
+# 真实感图片索引
+
+真实感图片用于帮助读者把抽象受力关系放回车内、办公和身体活动场景。它们不替代 SVG 受力图，而是作为章节开头或关键小节的视觉引导。
+
+## R01 真实感座椅压力分布
+
+文件：
+
+```text
+assets/images/realistic/01_realistic_pressure_distribution.png
+```
+
+预览：
+
+![真实感座椅压力分布](../assets/images/realistic/01_realistic_pressure_distribution.png)
+
+推荐章节：
+
+- 第一章 驾驶为什么会让人疼
+- 第三章 坐骨与软组织受力
+
+---
+
+## R02 真实感骨盆姿态对比
+
+文件：
+
+```text
+assets/images/realistic/02_realistic_pelvis_postures.png
+```
+
+预览：
+
+![真实感骨盆姿态对比](../assets/images/realistic/02_realistic_pelvis_postures.png)
+
+推荐章节：
+
+- 第二章 骨盆决定受力
+- 第五章 座椅调节流程
+
+---
+
+## R03 真实感右腿踏板负荷链
+
+文件：
+
+```text
+assets/images/realistic/03_realistic_pedal_load_chain.png
+```
+
+预览：
+
+![真实感右腿踏板负荷链](../assets/images/realistic/03_realistic_pedal_load_chain.png)
+
+推荐章节：
+
+- 第六章 踏板几何与右腿疲劳
+
+---
+
+## R04 真实感车座办公椅身体状态联动
+
+文件：
+
+```text
+assets/images/realistic/04_realistic_seat_office_body_triangle.png
+```
+
+预览：
+
+![真实感车座办公椅身体状态联动](../assets/images/realistic/04_realistic_seat_office_body_triangle.png)
+
+推荐章节：
+
+- 第八章 康复与办公椅联动
+- docs/office_chair_checklist.md

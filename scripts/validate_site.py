@@ -44,6 +44,10 @@ REQUIRED_FILES = [
     "assets/diagrams/svg/06_symptom_decision_overview.svg",
     "assets/diagrams/svg/07_experiment_system_flow.svg",
     "assets/diagrams/svg/08_rehab_office_triangle.svg",
+    "assets/images/realistic/01_realistic_pressure_distribution.png",
+    "assets/images/realistic/02_realistic_pelvis_postures.png",
+    "assets/images/realistic/03_realistic_pedal_load_chain.png",
+    "assets/images/realistic/04_realistic_seat_office_body_triangle.png",
     ".github/workflows/docs.yml",
     "scripts/sync_site_docs.py",
 ]

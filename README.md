@@ -116,6 +116,12 @@ assets/diagrams/svg/                 # 8 张原创 SVG 插图
 ├── 07_experiment_system_flow.svg
 └── 08_rehab_office_triangle.svg
 
+assets/images/realistic/             # 真实感教育图片
+├── 01_realistic_pressure_distribution.png
+├── 02_realistic_pelvis_postures.png
+├── 03_realistic_pedal_load_chain.png
+└── 04_realistic_seat_office_body_triangle.png
+
 experiments/                         # 实验系统
 ├── templates/                       #   CSV 记录模板
 ├── data/                            #   实际记录数据
@@ -181,6 +187,17 @@ scripts/                             # 工具脚本
 - 症状快速决策总览；
 - 座椅调整工程实验流程；
 - 车座、办公椅、身体状态三角模型。
+
+查看：
+
+[插图索引](docs/diagram_index.md)
+
+当前新增真实感教育图片包括：
+
+- 真实感座椅压力分布；
+- 真实感骨盆姿态对比；
+- 真实感右腿踏板负荷链；
+- 真实感车座、办公椅、身体状态联动。
 
 查看：
 
