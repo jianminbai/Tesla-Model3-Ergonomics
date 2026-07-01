@@ -175,6 +175,15 @@ assets/images/realistic/两位编号_realistic_英文主题.png
 02_realistic_pelvis_postures.png
 03_realistic_pedal_load_chain.png
 04_realistic_seat_office_body_triangle.png
+05_realistic_seat_height_adjustment.png
+06_realistic_side_bolster_pressure.png
+07_realistic_lumbar_support.png
+08_realistic_long_drive_break.png
+09_realistic_office_chair_setup.png
+10_realistic_experiment_dashboard.png
+11_realistic_vehicle_geometry_comparison.png
+12_realistic_community_case_collection.png
+13_realistic_seat_adjustment_controls.png
 ```
 
 使用方式：

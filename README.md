@@ -120,7 +120,16 @@ assets/images/realistic/             # 真实感教育图片
 ├── 01_realistic_pressure_distribution.png
 ├── 02_realistic_pelvis_postures.png
 ├── 03_realistic_pedal_load_chain.png
-└── 04_realistic_seat_office_body_triangle.png
+├── 04_realistic_seat_office_body_triangle.png
+├── 05_realistic_seat_height_adjustment.png
+├── 06_realistic_side_bolster_pressure.png
+├── 07_realistic_lumbar_support.png
+├── 08_realistic_long_drive_break.png
+├── 09_realistic_office_chair_setup.png
+├── 10_realistic_experiment_dashboard.png
+├── 11_realistic_vehicle_geometry_comparison.png
+├── 12_realistic_community_case_collection.png
+└── 13_realistic_seat_adjustment_controls.png
 
 experiments/                         # 实验系统
 ├── templates/                       #   CSV 记录模板
@@ -197,7 +206,8 @@ scripts/                             # 工具脚本
 - 真实感座椅压力分布；
 - 真实感骨盆姿态对比；
 - 真实感右腿踏板负荷链；
-- 真实感车座、办公椅、身体状态联动。
+- 真实感车座、办公椅、身体状态联动；
+- 座椅高度、侧翼、腰托、长途休息、实验记录和跨车型几何等扩展场景。
 
 查看：
 

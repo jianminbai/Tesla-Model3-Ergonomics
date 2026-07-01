@@ -277,3 +277,174 @@ assets/images/realistic/04_realistic_seat_office_body_triangle.png
 
 - 第八章 康复与办公椅联动
 - docs/office_chair_checklist.md
+
+---
+
+## R05 真实感座椅高度调节
+
+文件：
+
+```text
+assets/images/realistic/05_realistic_seat_height_adjustment.png
+```
+
+预览：
+
+![真实感座椅高度调节](../assets/images/realistic/05_realistic_seat_height_adjustment.png)
+
+推荐章节：
+
+- 第五章 座椅调节流程
+- 第四章 Tesla Model 3 座椅结构分析
+
+---
+
+## R06 真实感坐垫侧翼与软组织挤压
+
+文件：
+
+```text
+assets/images/realistic/06_realistic_side_bolster_pressure.png
+```
+
+预览：
+
+![真实感坐垫侧翼与软组织挤压](../assets/images/realistic/06_realistic_side_bolster_pressure.png)
+
+推荐章节：
+
+- 第四章 Tesla Model 3 座椅结构分析
+- docs/case_library.md
+
+---
+
+## R07 真实感腰托支撑
+
+文件：
+
+```text
+assets/images/realistic/07_realistic_lumbar_support.png
+```
+
+预览：
+
+![真实感腰托支撑](../assets/images/realistic/07_realistic_lumbar_support.png)
+
+推荐章节：
+
+- 第五章 座椅调节流程
+- docs/case_library.md
+
+---
+
+## R08 真实感长途驾驶休息
+
+文件：
+
+```text
+assets/images/realistic/08_realistic_long_drive_break.png
+```
+
+预览：
+
+![真实感长途驾驶休息](../assets/images/realistic/08_realistic_long_drive_break.png)
+
+推荐章节：
+
+- docs/case_library.md
+- 第九章 实验系统与量化记录
+
+---
+
+## R09 真实感办公椅检查
+
+文件：
+
+```text
+assets/images/realistic/09_realistic_office_chair_setup.png
+```
+
+预览：
+
+![真实感办公椅检查](../assets/images/realistic/09_realistic_office_chair_setup.png)
+
+推荐章节：
+
+- docs/office_chair_checklist.md
+- 第八章 康复与办公椅联动
+
+---
+
+## R10 真实感实验记录仪表盘
+
+文件：
+
+```text
+assets/images/realistic/10_realistic_experiment_dashboard.png
+```
+
+预览：
+
+![真实感实验记录仪表盘](../assets/images/realistic/10_realistic_experiment_dashboard.png)
+
+推荐章节：
+
+- 第九章 实验系统与量化记录
+- docs/experiment_system.md
+
+---
+
+## R11 真实感车型坐姿几何对比
+
+文件：
+
+```text
+assets/images/realistic/11_realistic_vehicle_geometry_comparison.png
+```
+
+预览：
+
+![真实感车型坐姿几何对比](../assets/images/realistic/11_realistic_vehicle_geometry_comparison.png)
+
+推荐章节：
+
+- docs/model_y_and_other_cars.md
+- 第四章 Tesla Model 3 座椅结构分析
+
+---
+
+## R12 真实感社区案例收集
+
+文件：
+
+```text
+assets/images/realistic/12_realistic_community_case_collection.png
+```
+
+预览：
+
+![真实感社区案例收集](../assets/images/realistic/12_realistic_community_case_collection.png)
+
+推荐章节：
+
+- docs/case_library.md
+- 第十一章 GitHub Pages 发布与项目运营
+
+---
+
+## R13 真实感座椅调节按钮
+
+文件：
+
+```text
+assets/images/realistic/13_realistic_seat_adjustment_controls.png
+```
+
+预览：
+
+![真实感座椅调节按钮](../assets/images/realistic/13_realistic_seat_adjustment_controls.png)
+
+推荐章节：
+
+- 第五章 座椅调节流程
+- 第九章 实验系统与量化记录
