@@ -1,0 +1,3147 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="用人体工程学、生物力学、受力图和工程实验解释 Tesla Model 3 驾驶舒适性">
+      
+      
+        <meta name="author" content="Jianmin Bai">
+      
+      
+      
+        <link rel="prev" href="../06-%E8%B8%8F%E6%9D%BF%E5%87%A0%E4%BD%95%E4%B8%8E%E5%8F%B3%E8%85%BF%E7%96%B2%E5%8A%B3/">
+      
+      
+        <link rel="next" href="../08-%E5%BA%B7%E5%A4%8D%E4%B8%8E%E5%8A%9E%E5%85%AC%E6%A4%85%E8%81%94%E5%8A%A8/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+    
+    
+      
+        <title>第七章 症状决策树 - Tesla Model 3 驾驶人体工程学与受力分析指南</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Tesla Model 3 驾驶人体工程学与受力分析指南" class="md-header__button md-logo" aria-label="Tesla Model 3 驾驶人体工程学与受力分析指南" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tesla Model 3 驾驶人体工程学与受力分析指南
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第七章 症状决策树
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="blue"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jianminbai/Tesla-Model3-Ergonomics" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jianminbai/Tesla-Model3-Ergonomics
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../QUICKSTART/" class="md-tabs__link">
+          
+  
+    
+  
+  快速开始
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../00-%E5%89%8D%E8%A8%80/" class="md-tabs__link">
+          
+  
+    
+  
+  正文
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../docs/quick_diagnosis_table/" class="md-tabs__link">
+          
+  
+    
+  
+  快速排查
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../docs/experiment_system/" class="md-tabs__link">
+          
+  
+    
+  
+  实验系统
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../docs/diagram_index/" class="md-tabs__link">
+          
+  
+    
+  
+  图表
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../docs/english_summary/" class="md-tabs__link">
+          
+  
+    
+  
+  项目维护
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tesla Model 3 驾驶人体工程学与受力分析指南" class="md-nav__button md-logo" aria-label="Tesla Model 3 驾驶人体工程学与受力分析指南" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Tesla Model 3 驾驶人体工程学与受力分析指南
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jianminbai/Tesla-Model3-Ergonomics" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jianminbai/Tesla-Model3-Ergonomics
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    首页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    快速开始
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            快速开始
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../QUICKSTART/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    快速开始
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/navigation_map/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    导航地图
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ROADMAP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    路线图
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    正文
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            正文
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00-%E5%89%8D%E8%A8%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    前言
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-%E9%A9%BE%E9%A9%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E8%AE%A9%E4%BA%BA%E7%96%BC/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第一章 驾驶为什么会让人疼
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-%E9%AA%A8%E7%9B%86%E5%86%B3%E5%AE%9A%E5%8F%97%E5%8A%9B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第二章 骨盆决定受力
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-%E5%9D%90%E9%AA%A8%E4%B8%8E%E8%BD%AF%E7%BB%84%E7%BB%87%E5%8F%97%E5%8A%9B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第三章 坐骨与软组织受力
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-Tesla_Model3%E5%BA%A7%E6%A4%85%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第四章 Tesla Model 3 座椅结构分析
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-%E5%BA%A7%E6%A4%85%E8%B0%83%E8%8A%82%E6%B5%81%E7%A8%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第五章 座椅调节流程
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-%E8%B8%8F%E6%9D%BF%E5%87%A0%E4%BD%95%E4%B8%8E%E5%8F%B3%E8%85%BF%E7%96%B2%E5%8A%B3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第六章 踏板几何与右腿疲劳
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第七章 症状决策树
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    第七章 症状决策树
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 使用决策树之前的原则
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.1 使用决策树之前的原则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      原则一：先分类，再调整
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      原则二：一次只调整一个变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      原则三：用时间验证，不用上车瞬间判断
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 决策树总览
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 决策树一：坐骨单点压痛
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3 决策树一：坐骨单点压痛">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      可能机制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      优先调整
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      保留信号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      回退信号
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#74" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 决策树二：坐骨两侧软组织挤压
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.4 决策树二：坐骨两侧软组织挤压">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      可能机制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      优先调整
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      保留信号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      回退信号
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#75" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 决策树三：大腿后侧紧硬
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.5 决策树三：大腿后侧紧硬">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      先区分两类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      优先调整
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#76" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6 决策树四：大腿后侧麻刺 / 过电感
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.6 决策树四：大腿后侧麻刺 / 过电感">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      优先原则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      回退信号
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#77" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7 决策树五：大腿根压力
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.7 决策树五：大腿根压力">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      优先调整
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      保留信号
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#78" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.8 决策树六：右腿踩油门疲劳
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.8 决策树六：右腿踩油门疲劳">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      优先调整
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#79" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9 决策树七：腰被顶 / 腰托不适
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.9 决策树七：腰被顶 / 腰托不适">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      正确顺序
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#710" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10 决策树八：办公椅也有类似感觉
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.10 决策树八：办公椅也有类似感觉">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      处理策略
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#711" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.11 调整后如何判断保留还是回退
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.11 调整后如何判断保留还是回退">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      可以保留的信号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      需要继续观察的信号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      需要回退的信号
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#712" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.12 当前案例的决策路径
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.12 当前案例的决策路径">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      当前最重要的验证点
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#713" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.13 本章小结
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-%E5%BA%B7%E5%A4%8D%E4%B8%8E%E5%8A%9E%E5%85%AC%E6%A4%85%E8%81%94%E5%8A%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第八章 康复与办公椅联动
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-%E5%AE%9E%E9%AA%8C%E7%B3%BB%E7%BB%9F%E4%B8%8E%E9%87%8F%E5%8C%96%E8%AE%B0%E5%BD%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第九章 实验系统与量化记录
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-%E5%8F%AF%E8%A7%86%E5%8C%96%E6%8F%92%E5%9B%BE%E4%B8%8E%E5%9B%BE%E8%A1%A8%E4%BD%93%E7%B3%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第十章 可视化插图与图表体系
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-GitHub_Pages%E5%8F%91%E5%B8%83%E4%B8%8E%E9%A1%B9%E7%9B%AE%E8%BF%90%E8%90%A5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第十一章 GitHub Pages 发布与项目运营
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    快速排查
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            快速排查
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/quick_diagnosis_table/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    症状快速排查表
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/office_chair_checklist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    办公椅检查清单
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/case_library/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    案例库
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/model_y_and_other_cars/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model Y 与其他车型对比
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    实验系统
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            实验系统
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/experiment_system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    实验系统说明
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experiments/driver_log_template/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    驾驶记录模板
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experiments/symptom_decision_log_template/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    症状决策记录模板
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experiments/rehab_office_log_template/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    康复办公记录模板
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experiments/case_001_current_setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Case001 当前设置
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    图表
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            图表
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/diagram_index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    插图索引
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/visual_style_guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    视觉风格指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    项目维护
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            项目维护
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/english_summary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    English Summary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../docs/github_pages_publish_guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    发布指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CONTRIBUTING/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    贡献指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.1 使用决策树之前的原则
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.1 使用决策树之前的原则">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      原则一：先分类，再调整
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      原则二：一次只调整一个变量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      原则三：用时间验证，不用上车瞬间判断
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.2 决策树总览
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.3 决策树一：坐骨单点压痛
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.3 决策树一：坐骨单点压痛">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      可能机制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      优先调整
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      保留信号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      回退信号
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#74" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.4 决策树二：坐骨两侧软组织挤压
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.4 决策树二：坐骨两侧软组织挤压">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      可能机制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      优先调整
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      保留信号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      回退信号
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#75" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.5 决策树三：大腿后侧紧硬
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.5 决策树三：大腿后侧紧硬">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      先区分两类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      优先调整
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#76" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.6 决策树四：大腿后侧麻刺 / 过电感
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.6 决策树四：大腿后侧麻刺 / 过电感">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      优先原则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      回退信号
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#77" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.7 决策树五：大腿根压力
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.7 决策树五：大腿根压力">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      优先调整
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      保留信号
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#78" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.8 决策树六：右腿踩油门疲劳
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.8 决策树六：右腿踩油门疲劳">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      优先调整
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#79" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9 决策树七：腰被顶 / 腰托不适
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.9 决策树七：腰被顶 / 腰托不适">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" class="md-nav__link">
+    <span class="md-ellipsis">
+      正确顺序
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#710" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10 决策树八：办公椅也有类似感觉
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.10 决策树八：办公椅也有类似感觉">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_35" class="md-nav__link">
+    <span class="md-ellipsis">
+      典型描述
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      判断流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      处理策略
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#711" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.11 调整后如何判断保留还是回退
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.11 调整后如何判断保留还是回退">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      可以保留的信号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      需要继续观察的信号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      需要回退的信号
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#712" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.12 当前案例的决策路径
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.12 当前案例的决策路径">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_41" class="md-nav__link">
+    <span class="md-ellipsis">
+      当前最重要的验证点
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#713" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.13 本章小结
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/jianminbai/Tesla-Model3-Ergonomics/edit/main/book/07-症状决策树.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="_1">第七章 症状决策树<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>本章核心观点：座椅调节不能只根据“哪里疼”直接下结论。相同位置的不适，可能来自不同机制；相同机制，也可能表现为不同位置的不适。决策树的作用，是把模糊体感转化为可验证的工程判断。</p>
+</blockquote>
+<hr />
+<h2 id="71">7.1 使用决策树之前的原则<a class="headerlink" href="#71" title="Permanent link">&para;</a></h2>
+<p>在进入具体症状前，先遵守三个原则。</p>
+<h3 id="_2">原则一：先分类，再调整<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>不要一出现不适就立即调座椅。先判断它属于哪一类：</p>
+<div class="highlight"><pre><span></span><code>压力集中
+肌肉紧张
+神经压迫
+踏板控制负荷
+靠背 / 腰托支撑问题
+久坐耐受性问题
+</code></pre></div>
+<p>分类错误，调整方向就会错。</p>
+<h3 id="_3">原则二：一次只调整一个变量<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>每次只改一个变量：</p>
+<ul>
+<li>高度；</li>
+<li>前后；</li>
+<li>前沿；</li>
+<li>靠背；</li>
+<li>腰托；</li>
+<li>方向盘；</li>
+<li>脚跟位置。</li>
+</ul>
+<p>不要一次同时改高度、前后、前沿和靠背。否则无法判断哪个变量有效，哪个变量带来副作用。</p>
+<h3 id="_4">原则三：用时间验证，不用上车瞬间判断<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>建议至少记录：</p>
+<ul>
+<li>5 分钟：初始感觉；</li>
+<li>30 分钟：软组织压力开始显现；</li>
+<li>60 分钟：真实耐受性；</li>
+<li>下车后：是否有残留；</li>
+<li>第二天：是否有延迟反应。</li>
+</ul>
+<hr />
+<h2 id="72">7.2 决策树总览<a class="headerlink" href="#72" title="Permanent link">&para;</a></h2>
+<p>可以先从这个总表判断方向。</p>
+<table>
+<thead>
+<tr>
+<th>主要症状</th>
+<th>优先怀疑</th>
+<th>优先检查</th>
+<th>第一调整方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>坐骨一个点疼</td>
+<td>峰值压强高</td>
+<td>骨盆、前沿、高度</td>
+<td>增加接触面积</td>
+</tr>
+<tr>
+<td>坐骨后方 / 尾骨方向疼</td>
+<td>骨盆后倾</td>
+<td>靠背、高度、腰托</td>
+<td>骨盆回中立</td>
+</tr>
+<tr>
+<td>坐骨两侧肉被挤</td>
+<td>侧翼 + 软组织张力</td>
+<td>高度、坐深、臀肌</td>
+<td>小幅升高或后移</td>
+</tr>
+<tr>
+<td>大腿后侧紧硬</td>
+<td>大腿承托强 / 腘绳肌紧</td>
+<td>高度、前沿、前后</td>
+<td>后移或降低前沿</td>
+</tr>
+<tr>
+<td>大腿后侧麻刺</td>
+<td>神经血管受压</td>
+<td>前沿、高度、硬边</td>
+<td>立即减压</td>
+</tr>
+<tr>
+<td>大腿根压力</td>
+<td>座椅太近 / 前沿高</td>
+<td>前后、前沿</td>
+<td>后移 1 cm</td>
+</tr>
+<tr>
+<td>右腿踩油门累</td>
+<td>踏板几何不佳</td>
+<td>脚跟、前后、高度</td>
+<td>调脚跟和前后</td>
+</tr>
+<tr>
+<td>腰被顶</td>
+<td>腰托过强 / 顺序错误</td>
+<td>腰托、骨盆</td>
+<td>降低腰托</td>
+</tr>
+<tr>
+<td>办公椅也类似</td>
+<td>身体组织状态</td>
+<td>腘绳肌、臀肌、久坐</td>
+<td>减少久坐 + 拉伸</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="症状快速决策总览" src="../../assets/diagrams/svg/06_symptom_decision_overview.svg" /></p>
+<hr />
+<h2 id="73">7.3 决策树一：坐骨单点压痛<a class="headerlink" href="#73" title="Permanent link">&para;</a></h2>
+<h3 id="_5">典型描述<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>坐骨附近一个点疼；</li>
+<li>像硬币大小；</li>
+<li>越坐越明显；</li>
+<li>起身后缓解；</li>
+<li>大腿参与承重少；</li>
+<li>调整后痛点会移动。</li>
+</ul>
+<h3 id="_6">可能机制<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>坐骨单点疼
+   ↓
+局部接触面积太小
+   ↓
+峰值压强升高
+   ↓
+软组织缺血 / 神经敏感
+   ↓
+疼痛累积
+</code></pre></div>
+<h3 id="_7">判断流程<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart TD
+    A[坐骨单点压痛] --&gt; B{是否是硬币大小的小点?}
+    B --&gt;|是| C[峰值压强过高]
+    B --&gt;|不是，是一片酸胀| D[可能是正常承重或软组织压力]
+    C --&gt; E{是否伴随尾骨方向疼?}
+    E --&gt;|是| F[优先检查骨盆后倾/靠背太躺/座椅太低]
+    E --&gt;|否| G[检查大腿是否参与承重]
+    G --&gt; H{大腿后侧是否几乎没压力?}
+    H --&gt;|是| I[考虑小幅提高高度或抬前沿]
+    H --&gt;|否| J[检查坐垫硬点/左右骨盆不对称]</code></pre>
+<h3 id="_8">优先调整<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ol>
+<li>先确认骨盆不是明显后倾；</li>
+<li>适当增加大腿后侧承托；</li>
+<li>小幅调整高度或前沿；</li>
+<li>避免一次调整过大；</li>
+<li>记录 30 / 60 分钟变化。</li>
+</ol>
+<h3 id="_9">保留信号<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>坐骨单点疼下降；</li>
+<li>大腿压力变成大面积承托；</li>
+<li>不出现麻刺；</li>
+<li>下车后无残留。</li>
+</ul>
+<h3 id="_10">回退信号<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>坐骨单点疼转移成大腿后侧麻刺；</li>
+<li>大腿根明显横向压迫；</li>
+<li>踩踏板变累；</li>
+<li>坐骨后方 / 尾骨方向疼加重。</li>
+</ul>
+<hr />
+<h2 id="74">7.4 决策树二：坐骨两侧软组织挤压<a class="headerlink" href="#74" title="Permanent link">&para;</a></h2>
+<h3 id="_11">典型描述<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>不是骨头尖疼；</li>
+<li>是坐骨两侧肉被挤；</li>
+<li>臀部侧边有夹住感；</li>
+<li>坐深后更明显；</li>
+<li>Model 3 更明显，办公椅也可能出现。</li>
+</ul>
+<h3 id="_12">可能机制<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>坐骨两侧软组织挤压
+   ↓
+座椅侧翼限制
+   +
+臀部软组织张力
+   +
+骨盆姿态
+   +
+右腿动态负荷
+</code></pre></div>
+<h3 id="_13">判断流程<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart TD
+    A[坐骨两侧肉被挤] --&gt; B{是否单侧更明显?}
+    B --&gt;|右侧明显| C[考虑右腿踏板控制负荷]
+    B --&gt;|双侧明显| D[考虑坐垫侧翼/臀肌张力/坐深]
+    C --&gt; E{离开油门是否明显缓解?}
+    E --&gt;|是| F[动态负荷占比高: 检查脚跟和前后位置]
+    E --&gt;|否| G[检查座椅侧翼和骨盆位置]
+    D --&gt; H{办公椅是否也类似?}
+    H --&gt;|是| I[身体组织状态占比高: 腘绳肌/臀肌/久坐]
+    H --&gt;|否| J[车型座椅侧翼占比高]</code></pre>
+<h3 id="_14">优先调整<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>当前案例中可按以下顺序：</p>
+<div class="highlight"><pre><span></span><code>第一步：小幅升高 1 cm
+目的：改善骨盆和坐骨两侧软组织压力
+
+第二步：若大腿后侧仍紧，后移 1 cm
+目的：减轻大腿根和右腿动态负荷
+</code></pre></div>
+<h3 id="_15">保留信号<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li>两侧挤压下降；</li>
+<li>坐骨单点疼不复发；</li>
+<li>大腿后侧没有麻刺；</li>
+<li>腰和肩仍能贴合靠背；</li>
+<li>踩油门更自然或不变差。</li>
+</ul>
+<h3 id="_16">回退信号<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<ul>
+<li>大腿后侧麻刺；</li>
+<li>大腿根被横向勒住；</li>
+<li>坐骨单点疼复发；</li>
+<li>右腿踩踏板更累；</li>
+<li>腰背离开靠背。</li>
+</ul>
+<hr />
+<h2 id="75">7.5 决策树三：大腿后侧紧硬<a class="headerlink" href="#75" title="Permanent link">&para;</a></h2>
+<h3 id="_17">典型描述<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<ul>
+<li>大腿后侧一大片紧；</li>
+<li>肌肉像硬的；</li>
+<li>坐久更明显；</li>
+<li>可能开车和办公椅都有；</li>
+<li>不一定是单点疼。</li>
+</ul>
+<h3 id="_18">先区分两类<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>A 类：大面积承托感
+- 有压力
+- 不麻
+- 不刺
+- 下车后很快缓解
+- 坐骨单点疼减少
+
+B 类：异常紧硬
+- 越坐越硬
+- 伴随麻刺
+- 下车后仍残留
+- 办公椅也明显
+</code></pre></div>
+<h3 id="_19">判断流程<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart TD
+    A[大腿后侧紧硬] --&gt; B{是否伴随麻刺/过电感?}
+    B --&gt;|是| C[优先判断神经血管受压, 立即减压]
+    B --&gt;|否| D{是否下车后快速缓解?}
+    D --&gt;|是| E[可能是承托增加或动态负荷]
+    D --&gt;|否| F[身体组织状态占比提高]
+    E --&gt; G{坐骨单点疼是否下降?}
+    G --&gt;|是| H[压力分散方向可能正确, 继续观察]
+    G --&gt;|否| I[可能只是压力转移, 需回看高度/前沿]
+    F --&gt; J[检查腘绳肌/臀肌/办公椅久坐]</code></pre>
+<h3 id="_20">优先调整<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p>如果没有麻刺：</p>
+<ol>
+<li>先检查是否前沿过高；</li>
+<li>若座椅较近，尝试后移 1 cm；</li>
+<li>若高度刚升高，观察是否加重大腿压力；</li>
+<li>同步做腘绳肌和臀肌放松；</li>
+<li>不要立刻大幅降低，避免坐骨单点疼复发。</li>
+</ol>
+<p>如果有麻刺：</p>
+<ol>
+<li>立即降低前沿或整体高度；</li>
+<li>检查是否有硬边压迫；</li>
+<li>避免继续硬扛；</li>
+<li>若离车后仍持续，应咨询专业人士。</li>
+</ol>
+<hr />
+<h2 id="76">7.6 决策树四：大腿后侧麻刺 / 过电感<a class="headerlink" href="#76" title="Permanent link">&para;</a></h2>
+<h3 id="_21">典型描述<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<ul>
+<li>麻；</li>
+<li>刺；</li>
+<li>过电；</li>
+<li>不是普通酸胀；</li>
+<li>沿大腿后方走；</li>
+<li>有时伴随小腿方向牵扯。</li>
+</ul>
+<h3 id="_22">判断流程<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart TD
+    A[大腿后侧麻刺/过电感] --&gt; B{是否只在坐着时出现?}
+    B --&gt;|是| C[座椅压迫可能性高]
+    B --&gt;|否, 离车后也有| D[需要考虑腰椎/神经问题, 建议就医评估]
+    C --&gt; E{是否靠近膝窝/大腿后侧下方?}
+    E --&gt;|是| F[前沿/高度/硬边压迫风险]
+    E --&gt;|否| G[检查臀部深层/坐骨神经区域]
+    F --&gt; H[降低前沿或高度, 增加膝窝间隙]</code></pre>
+<h3 id="_23">优先原则<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<p>麻刺不是普通压力感。它比“有压力”“有酸胀”更需要谨慎。</p>
+<h3 id="_24">回退信号<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<p>只要出现以下情况，优先回退最近一次调整：</p>
+<ul>
+<li>麻刺加重；</li>
+<li>坐一会儿后向小腿放射；</li>
+<li>下车后持续；</li>
+<li>伴随无力；</li>
+<li>夜间也有异常感。</li>
+</ul>
+<hr />
+<h2 id="77">7.7 决策树五：大腿根压力<a class="headerlink" href="#77" title="Permanent link">&para;</a></h2>
+<h3 id="_25">典型描述<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<ul>
+<li>臀部下面一条横向压力；</li>
+<li>大腿根像被顶住；</li>
+<li>前沿抬高后更明显；</li>
+<li>座椅靠前时更明显；</li>
+<li>后移后可能缓解。</li>
+</ul>
+<h3 id="_26">判断流程<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart TD
+    A[大腿根压力] --&gt; B{是否横向一条被勒?}
+    B --&gt;|是| C[检查前沿高度和座椅是否过近]
+    B --&gt;|否, 是大面积承托| D[可能是正常分散承重]
+    C --&gt; E{踩油门时是否加重?}
+    E --&gt;|是| F[右腿动态负荷 + 座椅几何]
+    E --&gt;|否| G[静态坐垫承托偏强]
+    F --&gt; H[优先后移 1 cm, 检查脚跟支点]</code></pre>
+<h3 id="_27">优先调整<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<ol>
+<li>若座椅偏近，先后移 1 cm；</li>
+<li>若前沿明显高，再略降前沿；</li>
+<li>若刚升高座椅后出现，观察高度是否过高；</li>
+<li>确认刹车到底安全。</li>
+</ol>
+<h3 id="_28">保留信号<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<ul>
+<li>大腿根压力下降；</li>
+<li>踩踏板自然；</li>
+<li>坐骨单点疼不复发；</li>
+<li>大腿后侧不麻。</li>
+</ul>
+<hr />
+<h2 id="78">7.8 决策树六：右腿踩油门疲劳<a class="headerlink" href="#78" title="Permanent link">&para;</a></h2>
+<h3 id="_29">典型描述<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<ul>
+<li>右腿比左腿累；</li>
+<li>大腿后侧或臀下右侧紧；</li>
+<li>脚踝控制不自然；</li>
+<li>离开油门压力下降；</li>
+<li>长时间电门控制后加重。</li>
+</ul>
+<h3 id="_30">判断流程<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart TD
+    A[右腿踩油门疲劳] --&gt; B{离开油门是否明显缓解?}
+    B --&gt;|是| C[动态控制负荷占比高]
+    B --&gt;|否| D[静态座椅压力占比高]
+    C --&gt; E{脚跟是否稳定落地?}
+    E --&gt;|否| F[调整脚跟位置/座椅前后]
+    E --&gt;|是| G{是否座椅过近导致膝髋角小?}
+    G --&gt;|是| H[后移 1 cm]
+    G --&gt;|否| I[检查高度和前沿是否使大腿持续绷紧]</code></pre>
+<h3 id="_31">优先调整<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h3>
+<ol>
+<li>先找稳定脚跟支点；</li>
+<li>检查是否座椅过近；</li>
+<li>后移 1 cm 是优先小步实验；</li>
+<li>不要为了解决右腿累而把座椅调到刹车不安全；</li>
+<li>检查方向盘是否导致身体前探。</li>
+</ol>
+<hr />
+<h2 id="79">7.9 决策树七：腰被顶 / 腰托不适<a class="headerlink" href="#79" title="Permanent link">&para;</a></h2>
+<h3 id="_32">典型描述<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
+<ul>
+<li>腰托一充气，大腿就被往前推；</li>
+<li>腰不是被支撑，而是被顶；</li>
+<li>身体前滑；</li>
+<li>大腿根压力增加；</li>
+<li>坐骨两侧更挤。</li>
+</ul>
+<h3 id="_33">判断流程<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart TD
+    A[腰被顶] --&gt; B{腰托是否充得明显?}
+    B --&gt;|是| C[先降低腰托]
+    B --&gt;|否| D[检查靠背角度和骨盆位置]
+    C --&gt; E{降低后大腿根是否减轻?}
+    E --&gt;|是| F[腰托过强或顺序错误]
+    E --&gt;|否| G[继续检查座椅前后和高度]</code></pre>
+<h3 id="_34">正确顺序<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>先坐深
+↓
+找骨盆中立
+↓
+腰部自然出现小弧
+↓
+腰托轻轻接住
+</code></pre></div>
+<p>错误顺序：</p>
+<div class="highlight"><pre><span></span><code>骨盆仍然后倾
+↓
+腰托打满
+↓
+腰托顶不进腰窝
+↓
+整个人被推向前
+</code></pre></div>
+<hr />
+<h2 id="710">7.10 决策树八：办公椅也有类似感觉<a class="headerlink" href="#710" title="Permanent link">&para;</a></h2>
+<h3 id="_35">典型描述<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h3>
+<ul>
+<li>开车有大腿后侧紧；</li>
+<li>办公椅也有；</li>
+<li>坐骨两侧软组织也类似；</li>
+<li>站起来明显缓解；</li>
+<li>不是某一张椅子独有。</li>
+</ul>
+<h3 id="_36">判断流程<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>flowchart TD
+    A[办公椅也类似] --&gt; B{是否站起来明显缓解?}
+    B --&gt;|是| C[久坐压力 + 软组织耐受性问题]
+    B --&gt;|否| D[若持续疼/麻, 需专业评估]
+    C --&gt; E{大腿后侧是否很紧?}
+    E --&gt;|是| F[腘绳肌/臀肌张力需处理]
+    E --&gt;|否| G[检查办公椅高度和坐垫前沿]
+    F --&gt; H[减少久坐 + 拉伸 + 车内小步调整]</code></pre>
+<h3 id="_37">处理策略<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h3>
+<p>如果办公椅也类似，不要把所有问题都归因于 Model 3。</p>
+<p>需要同步做：</p>
+<ul>
+<li>每 30 到 45 分钟起身；</li>
+<li>腘绳肌拉伸；</li>
+<li>臀肌 / 梨状肌放松；</li>
+<li>髋屈肌活动；</li>
+<li>骨盆前后摇摆练习；</li>
+<li>办公椅高度与坐深调整；</li>
+<li>驾驶座椅小步验证。</li>
+</ul>
+<hr />
+<h2 id="711">7.11 调整后如何判断保留还是回退<a class="headerlink" href="#711" title="Permanent link">&para;</a></h2>
+<p>每次调整后不要只问“舒服了吗”。应按下面标准判断。</p>
+<h3 id="_38">可以保留的信号<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h3>
+<p>满足越多，越说明方向正确：</p>
+<ul>
+<li>坐骨单点疼下降；</li>
+<li>坐骨两侧软组织挤压下降；</li>
+<li>大腿后侧只是有承托，不麻不刺；</li>
+<li>大腿根压力下降；</li>
+<li>右腿踩油门更自然；</li>
+<li>腰背和肩膀仍能贴合靠背；</li>
+<li>刹车到底时膝盖仍有弯曲；</li>
+<li>下车后不适快速消失；</li>
+<li>第二天没有残留恶化。</li>
+</ul>
+<h3 id="_39">需要继续观察的信号<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h3>
+<ul>
+<li>有新压力，但不疼不麻；</li>
+<li>大腿压力变明显，但坐骨单点疼下降；</li>
+<li>坐骨存在感增强，但不是尖锐疼；</li>
+<li>30 分钟内可以接受，60 分钟后才明显。</li>
+</ul>
+<p>这类情况不建议马上回退，可记录 2 到 3 次。</p>
+<h3 id="_40">需要回退的信号<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h3>
+<p>出现以下任一情况，应优先回退最近一次调整：</p>
+<ul>
+<li>麻、刺、过电感；</li>
+<li>疼痛向小腿放射；</li>
+<li>刹车到底时腿接近伸直；</li>
+<li>身体需要前探；</li>
+<li>腰背离开靠背；</li>
+<li>下车后仍持续不适；</li>
+<li>坐骨单点疼明显复发；</li>
+<li>右腿踩踏板明显更累。</li>
+</ul>
+<hr />
+<h2 id="712">7.12 当前案例的决策路径<a class="headerlink" href="#712" title="Permanent link">&para;</a></h2>
+<p>根据当前状态：</p>
+<ul>
+<li>坐骨单点疼下降；</li>
+<li>大腿后侧压力明显；</li>
+<li>坐骨两侧软组织仍挤；</li>
+<li>腰和肩能贴合靠背；</li>
+<li>办公椅也类似；</li>
+<li>右侧与油门控制有关。</li>
+</ul>
+<p>推荐路径是：</p>
+<pre class="mermaid"><code>flowchart TD
+    A[当前状态] --&gt; B[前沿抬高后坐骨单点痛下降]
+    B --&gt; C[说明压力分散方向有效]
+    C --&gt; D[仍有坐骨两侧软组织挤压]
+    D --&gt; E[实验A: 座椅整体升高 1 cm]
+    E --&gt; F{两侧挤压是否下降?}
+    F --&gt;|是| G[保留高度, 继续观察大腿后侧]
+    F --&gt;|否| H[回退或检查侧翼/身体张力]
+    G --&gt; I{大腿后侧是否仍紧硬?}
+    I --&gt;|是| J[实验B: 后移 1 cm]
+    I --&gt;|否| K[保持设置, 开始稳定记录]
+    J --&gt; L{右腿控制是否更自然?}
+    L --&gt;|是| M[保留并记录]
+    L --&gt;|否| N[回退后移量]</code></pre>
+<h3 id="_41">当前最重要的验证点<a class="headerlink" href="#_41" title="Permanent link">&para;</a></h3>
+<ol>
+<li>升高 1 cm 后，坐骨两侧软组织是否下降；</li>
+<li>升高后，大腿后侧是否变成麻刺；</li>
+<li>后移 1 cm 后，大腿根和右腿控制是否改善；</li>
+<li>刹车到底是否仍安全；</li>
+<li>办公椅同类症状是否随拉伸和减少久坐改善。</li>
+</ol>
+<hr />
+<h2 id="713">7.13 本章小结<a class="headerlink" href="#713" title="Permanent link">&para;</a></h2>
+<p>症状决策树的目的不是给出一次性答案，而是建立可迭代的判断系统。</p>
+<ul>
+<li>坐骨单点疼：优先考虑峰值压强；</li>
+<li>坐骨两侧肉挤：考虑侧翼、软组织张力、骨盆和右腿动态负荷；</li>
+<li>大腿后侧紧硬：先区分承托感和异常紧张；</li>
+<li>大腿后侧麻刺：优先减压，不要硬扛；</li>
+<li>大腿根压力：优先检查座椅过近和前沿高度；</li>
+<li>右腿疲劳：必须把踏板几何纳入分析；</li>
+<li>腰被顶：先调整腰托顺序和强度；</li>
+<li>办公椅也类似：说明身体组织状态也参与了问题。</li>
+</ul>
+<p>真正有效的座椅调节，不是找到一个永远不变的位置，而是形成一套稳定的判断方法：</p>
+<div class="highlight"><pre><span></span><code>症状分类
+↓
+机制判断
+↓
+小步调整
+↓
+时间验证
+↓
+保留或回退
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.indexes", "search.highlight", "search.share", "content.code.copy", "content.action.edit"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      
+    
+  </body>
+</html>
