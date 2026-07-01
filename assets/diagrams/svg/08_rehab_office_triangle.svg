@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <title>车座办公椅身体状态三角模型</title>
+  <defs>
+    <style>
+      .title { font: 700 24px "Microsoft YaHei", "PingFang SC", Arial, sans-serif; fill: #111827; }
+      .subtitle { font: 500 15px "Microsoft YaHei", "PingFang SC", Arial, sans-serif; fill: #374151; }
+      .label { font: 500 14px "Microsoft YaHei", "PingFang SC", Arial, sans-serif; fill: #111827; }
+      .small { font: 400 12px "Microsoft YaHei", "PingFang SC", Arial, sans-serif; fill: #374151; }
+      .tiny { font: 400 11px "Microsoft YaHei", "PingFang SC", Arial, sans-serif; fill: #4b5563; }
+      .seat { fill: #e5e7eb; stroke: #6b7280; stroke-width: 2; }
+      .body { fill: #dbeafe; stroke: #2563eb; stroke-width: 2; }
+      .bone { fill: #fef3c7; stroke: #d97706; stroke-width: 2; }
+      .normal { fill: #bfdbfe; stroke: #2563eb; stroke-width: 2; }
+      .warn { fill: #fed7aa; stroke: #ea580c; stroke-width: 2; }
+      .risk { fill: #fecaca; stroke: #dc2626; stroke-width: 2; }
+      .ok { fill: #bbf7d0; stroke: #16a34a; stroke-width: 2; }
+      .line { stroke: #374151; stroke-width: 2; fill: none; }
+      .arrow { stroke: #374151; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+      .greenArrow { stroke: #16a34a; stroke-width: 3; fill: none; marker-end: url(#greenArrow); }
+      .redArrow { stroke: #dc2626; stroke-width: 3; fill: none; marker-end: url(#redArrow); }
+      .orangeArrow { stroke: #ea580c; stroke-width: 3; fill: none; marker-end: url(#orangeArrow); }
+      .grid { stroke: #e5e7eb; stroke-width: 1; }
+      .note { fill: #f9fafb; stroke: #d1d5db; stroke-width: 1.5; rx: 10; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151" />
+    </marker>
+    <marker id="greenArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#16a34a" />
+    </marker>
+    <marker id="redArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#dc2626" />
+    </marker>
+    <marker id="orangeArrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ea580c" />
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <text x="40" y="50" class="title">图 8：车座、办公椅、身体组织状态三角模型</text>
+  <text x="40" y="82" class="subtitle">当办公椅也有类似不适时，不能只把问题归因于 Model 3 座椅。</text>
+
+  <polygon points="500,145 180,555 820,555" fill="#f9fafb" stroke="#9ca3af" stroke-width="3"/>
+  <circle cx="500" cy="145" r="95" class="normal"/>
+  <text x="448" y="135" class="label">Model 3</text>
+  <text x="445" y="160" class="small">座椅几何</text>
+
+  <circle cx="180" cy="555" r="95" class="warn"/>
+  <text x="132" y="545" class="label">办公久坐</text>
+  <text x="118" y="570" class="small">耐受性下降</text>
+
+  <circle cx="820" cy="555" r="95" class="risk"/>
+  <text x="752" y="545" class="label">身体组织状态</text>
+  <text x="754" y="570" class="small">腘绳肌 / 臀肌紧</text>
+
+  <ellipse cx="500" cy="430" rx="160" ry="70" class="bone"/>
+  <text x="405" y="420" class="label">共同表现</text>
+  <text x="385" y="448" class="small">坐骨两侧挤压 + 大腿后侧紧硬</text>
+
+  <path d="M500 240 L500 360" class="orangeArrow"/>
+  <path d="M245 500 L380 450" class="orangeArrow"/>
+  <path d="M755 500 L620 450" class="redArrow"/>
+
+  <rect x="180" y="625" width="640" height="42" class="ok"/>
+  <text x="215" y="652" class="label">正确策略：车内小步验证 + 办公椅优化 + 每日10分钟活动 + 量化记录</text>
+
+</svg>
